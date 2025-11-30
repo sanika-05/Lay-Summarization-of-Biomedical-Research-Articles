@@ -5,7 +5,7 @@ Trained BioGPT model with ~350M parameters , applied lora with r = 8, lora_alpha
 learning_rate = 2e-4,optimiser = AdaFactor , with cosine scheduler. 
 For generation used 
 penalty_alpha=.5, min_length=100,repetition_penalty=2.5,max_new_token=100,top_k=6
-Tried Flan T5 small with 75M parameters, applied lora with r = 8, lora_alpha=64,target_modules= ['q', 'k', 'v','o','wi_0','wi_1','wi'] leading to ~1M trainable parameters.
+Trained Flan T5 small with 75M parameters, applied lora with r = 8, lora_alpha=64,target_modules= ['q', 'k', 'v','o','wi_0','wi_1','wi'] leading to ~1M trainable parameters.
 lr = 5e-5 , optimiser = AdaFactor , with cosine scheduler. 
 For generation used 
 penalty_alpha=.5, min_length=100,repetition_penalty=2.5,max_length=300
@@ -16,3 +16,4 @@ BioGPT copied most of the sentences from abstract and new text generated was not
 
 
 Submission - BioGPT
+
