@@ -1,7 +1,7 @@
 Data - Used abstract section of aticle as source and added a prompt 'Explain:' to it.
 max_length of input is 1024.
 
-Tried BioGPT model with ~350M parameters , applied lora with r = 8, lora_alpha=64,target_modules= ['k_proj', 'v_proj', 'q_proj','fc1','fc2'] leading to ~3M trainable parameters.
+Trained BioGPT model with ~350M parameters , applied lora with r = 8, lora_alpha=64,target_modules= ['k_proj', 'v_proj', 'q_proj','fc1','fc2'] leading to ~3M trainable parameters.
 learning_rate = 2e-4,optimiser = AdaFactor , with cosine scheduler. 
 For generation used 
 penalty_alpha=.5, min_length=100,repetition_penalty=2.5,max_new_token=100,top_k=6
@@ -13,5 +13,6 @@ penalty_alpha=.5, min_length=100,repetition_penalty=2.5,max_length=300
 
 Flan-T5 gave more readable and coherent sentences , but of small length.
 BioGPT copied most of the sentences from abstract and new text generated was not grammatically correct.
+
 
 Submission - BioGPT
